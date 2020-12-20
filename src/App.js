@@ -10,10 +10,10 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Route path="trangchu" component={TrangChu}></Route>
-      <Route path="dangky" component={DangKy}></Route>
-      <Route path="dangnhap" component={DangNhap}></Route>
-      <Route path="chitietphim" component={ChiTietPhim}></Route>
+      <Route path="/trangchu" component={TrangChu} />
+      <Route path="/dangky" component={DangKy}></Route>
+      <Route path="/dangnhap" component={DangNhap}></Route>
+      <Route path="/chitietphim" component={ChiTietPhim}></Route>
     </BrowserRouter>
   );
 }

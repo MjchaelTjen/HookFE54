@@ -13,10 +13,10 @@ export default function Header() {
                         <NavLink activeClassName="bg-white text-dark" activeStyle={{ color: 'red', fontWeight:'bold' }} className="nav-link" to="/trangchu">Trang Chủ <span className="sr-only">(current)</span></NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink activeClassName="bg-white text-dark" activeStyle={{ color: 'red', fontWeight:'bold' }} className="nav-link" to="/dangky">Đăng ký</NavLink>
+                        <NavLink activeClassName="bg-white text-dark" activeStyle={{ color: 'red', fontWeight:'bold' }} className="nav-link" to="dangky">Đăng ký</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink activeClassName="bg-white text-dark" activeStyle={{ color: 'red', fontWeight:'bold' }} NavLink className="nav-link" to="/dangnhap">Đăng nhập</NavLink>
+                        <NavLink activeClassName="bg-white text-dark" activeStyle={{ color: 'red', fontWeight:'bold' }} NavLink className="nav-link" to="dangnhap">Đăng nhập</NavLink>
                     </li>
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
