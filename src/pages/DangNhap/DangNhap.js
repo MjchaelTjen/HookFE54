@@ -39,7 +39,7 @@ export default function DangNhap() {
     }
     return (
         <form className='container' onSubmit={handleSubmit}>
-            <h3 className='display-4'>Đăng nhập</h3>
+            <h3 style={{color:'orange', fontSize:'45',fontWeight:'bold'}}>Đăng nhập</h3>
             <div className='from-group'>
                 <p style={{ color: 'blue', fontWeight: 'bold' }}>Tài khoản</p>
                 <input className='from-control' name='taiKhoan' placeholder='Nhập tài khoản' onChange={handleChangeInput}></input>

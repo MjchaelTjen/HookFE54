@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { connect, useDispatch, useSelector } from 'react-redux'
 import Axios from 'axios'
 import { getDataPhimAction } from '../../redux/actions/QuanLyPhimActions'
+import { NavLink } from 'react-router-dom'
 
 
 export default function TrangChu(props) {
@@ -32,12 +33,13 @@ export default function TrangChu(props) {
 
   const renderFilm = () => {
     return mangPhim.map((phim, index) => {
-      return <div className='col-4' key={index}>
+      return <div className='col-2' key={index}>
         <div className='card'>
           <img className='card-img-top' src={phim.hinhAnh} alt={phim.hinhAnh} />
           <div className='card-body'>
             <h4 className='card-title'>{phim.tenPhim}</h4>
             <p className='card-text'>{phim.moTa}</p>
+            <NavLink to={`/chitietphim/${phim.maPhim}`} className='btn btn-success'>Mua vé</NavLink>
           </div>
         </div>
       </div>

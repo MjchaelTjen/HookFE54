@@ -12,8 +12,6 @@ export const dangNhapAction = (nguoiDung) => {
                 data: nguoiDung
             });
 
-
-            
             // Đăng nhập thành công
             console.log(result.data)
             // Lấy token lưu vào localstore
@@ -23,8 +21,6 @@ export const dangNhapAction = (nguoiDung) => {
         catch (err) {
             // đăng nhập thất bại
             console.log(err.response?.data)
-
-
         }
 
         // Cách dùng promies 
